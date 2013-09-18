@@ -1,6 +1,6 @@
 whatsmyip
 ---------
-
+ 
 A bash script to determine what the ip is of the machine it is executed on.
 
 When this script is executed, it will try to determine if it is beig run on either Solaris, Linux or Mac OSx.
@@ -10,6 +10,9 @@ The current options are:
 	Linux  -> Linux
 	Darwin -> Mac OSx
 
-The script then determines the IP and prints it out.
+The script, based off of the findings of which OS it is working on, will determine which interfaces are active, and report
+back the IP of the interface that is active.  This only supports the primary interfaces on a machine, and not any virtual 
+interfaces.  
 
-If there are any issues with this script, please be sure and let me know.
+If there are any issues with this script, please be sure and let me know.  Feel free to open an issue if you find any
+bugs or if you think there is a 'nice to have' feature.  
