@@ -10,9 +10,8 @@ The current options are:
 	Linux  -> Linux
 	Darwin -> Mac OSx
 
-The script, based off of the findings of which OS it is working on, will determine which interfaces are active, and report
-back the IP of the interface that is active.  This only supports the primary interfaces on a machine, and not any virtual 
-interfaces.  
+The script, based off of the findings of which OS it is working on, will determine which interfaces are active, and report back the IP of the interface that is active.  This only supports the primary interfaces on a machine, and not any virtual interfaces. 
 
-If there are any issues with this script, please be sure and let me know.  Feel free to open an issue if you find any
-bugs or if you think there is a 'nice to have' feature.  
+If there are any issues with this script, please be sure and let me know.  Feel free to open an issue if you find any bugs or if you think there is a 'nice to have' feature. 
+
+*Note:  I realize that there are some machines that have multiple interfaces.  Currently, the Solaris code will refer all interfaces with IPs, except the 127.0.x.x addresses, which are typically loopback type addresses.  I am not sure if I want to concentrate on just the bge interfaces or not, but will decide soon.
